@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBuddy - SRM University Study Partner Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="app">
+        <!-- Top Navigation Header -->
+        <nav id="main-nav" class="main-nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>🎓 StudyBuddy</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#features" class="nav-link" data-section="features">Features</a>
+                    <a href="#how-it-works" class="nav-link" data-section="how-it-works">How It Works</a>
+                    <a href="#developer" class="nav-link" data-section="developer">About Developer</a>
+                    <button id="get-started-nav" class="btn btn--primary btn--sm">Get Started</button>
+                </div>
+                <div class="nav-hamburger" id="nav-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Homepage Content -->
+        <div id="homepage" class="homepage active">
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <div class="hero-background">
+                    <div class="floating-icon" style="--delay: 0s;">📚</div>
+                    <div class="floating-icon" style="--delay: 1s;">🎓</div>
+                    <div class="floating-icon" style="--delay: 2s;">💡</div>
+                    <div class="floating-icon" style="--delay: 3s;">🚀</div>
+                    <div class="floating-icon" style="--delay: 4s;">⭐</div>
+                    <div class="floating-icon" style="--delay: 5s;">🔬</div>
+                </div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Find Your Perfect Study Partner</h1>
+                        <p class="hero-subtitle">Connect with like-minded students at SRM University Modinagar. Swipe, match, and achieve academic excellence together!</p>
+                        <div class="hero-actions">
+                            <button id="get-started-hero" class="btn btn--primary btn--lg">Get Started</button>
+                            <button id="learn-more" class="btn btn--outline btn--lg">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics Section -->
+            <section class="stats-section">
+                <div class="container">
+                    <h2 class="section-title">Making Study Sessions Count</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-value" data-count="1250">0</div>
+                            <div class="stat-label">Students Connected</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📖</div>
+                            <div class="stat-value" data-count="3480">0</div>
+                            <div class="stat-label">Study Sessions</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🎯</div>
+                            <div class="stat-value" data-count="94">0</div>
+                            <div class="stat-label">Success Rate %</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🔥</div>
+                            <div class="stat-value" data-count="856">0</div>
+                            <div class="stat-label">Active Users</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section id="how-it-works" class="how-it-works-section">
+                <div class="container">
+                    <h2 class="section-title">How StudyBuddy Works</h2>
+                    <div class="steps-grid">
+                        <div class="step-card">
+                            <div class="step-icon">👤</div>
+                            <h3>Create Your Profile</h3>
+                            <p>Share your subjects, study preferences, and academic goals to get perfectly matched with compatible study partners.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-icon">💕</div>
+                            <h3>Swipe & Match</h3>
+                            <p>Browse through student profiles, swipe right on those you'd like to study with, and get matched when the feeling is mutual!</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-icon">🚀</div>
+                            <h3>Start Studying</h3>
+                            <p>Connect with your matches, plan study sessions, and boost your academic performance through collaborative learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="features-section">
+                <div class="container">
+                    <h2 class="section-title">Why Choose StudyBuddy?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🤖</div>
+                            <h3>AI Study Assistant</h3>
+                            <p>Get instant help with academic queries, book recommendations, professor contacts, and schedule information.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Smart Matching</h3>
+                            <p>Our advanced algorithm matches you based on subjects, study times, learning style, and academic compatibility.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📚</div>
+                            <h3>Resource Library</h3>
+                            <p>Access curated book recommendations, professor contacts, and up-to-date campus schedules and facilities.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Instant Connections</h3>
+                            <p>Real-time matching and instant notifications when you find study partners who share your academic interests.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mini Demo Section -->
+            <section class="demo-section">
+                <div class="container">
+                    <h2 class="section-title">See It In Action</h2>
+                    <div class="demo-container">
+                        <div class="demo-card">
+                            <div class="demo-card-header">
+                                <div class="demo-avatar">👨‍💻</div>
+                                <div class="demo-info">
+                                    <h4>Arjun Sharma</h4>
+                                    <p>2nd Year • Computer Science</p>
+                                </div>
+                                <div class="compatibility-badge">85%</div>
+                            </div>
+                            <div class="demo-card-body">
+                                <div class="demo-subjects">
+                                    <span class="subject-tag">Data Structures</span>
+                                    <span class="subject-tag">Database Management</span>
+                                </div>
+                                <p class="demo-bio">Looking for coding practice partners. Strong in algorithms.</p>
+                            </div>
+                            <div class="demo-actions">
+                                <button class="demo-btn pass">❌</button>
+                                <button class="demo-btn like">❤️</button>
+                            </div>
+                        </div>
+                        <p class="demo-text">Swipe right to like, left to pass!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Developer Section -->
+            <section id="developer" class="developer-section">
+                <div class="container">
+                    <div class="developer-card">
+                        <div class="developer-info">
+                            <div class="developer-avatar">👨‍💻</div>
+                            <div class="developer-content">
+                                <h2>About the Developer</h2>
+                                <h3>Built with ❤️ for SRM University</h3>
+                                <p>Full-stack developer passionate about educational technology and creating innovative solutions that enhance collaborative learning experiences for students.</p>
+                                <div class="developer-skills">
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">UI/UX Design</span>
+                                    <span class="skill-tag">Educational Apps</span>
+                                </div>
+                                <div class="developer-links">
+                                    <a href="#" class="social-link" target="_blank">
+                                        <span>💼</span> Portfolio
+                                    </a>
+                                    <a href="#" class="social-link" target="_blank">
+                                        <span>🔗</span> LinkedIn
+                                    </a>
+                                    <a href="#" class="social-link" target="_blank">
+                                        <span>📧</span> Contact
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>Ready to Find Your Study Squad?</h2>
+                        <p>Join thousands of SRM students who are already boosting their academic performance through collaborative learning.</p>
+                        <button id="get-started-cta" class="btn btn--primary btn--lg">Start Your Journey</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Onboarding Screen -->
+        <div id="onboarding" class="screen">
+            <div class="container">
+                <div class="onboarding-header">
+                    <h1>🎓 Welcome to StudyBuddy</h1>
+                    <p>Let's create your profile to find the perfect study partners</p>
+                </div>
+                
+                <form id="profile-form" class="profile-form">
+                    <div class="form-group">
+                        <label class="form-label">Name *</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Year *</label>
+                        <select class="form-control" id="year" required>
+                            <option value="">Select Year</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Department *</label>
+                        <select class="form-control" id="department" required>
+                            <option value="">Select Department</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Subjects (Select multiple)</label>
+                        <div id="subjects-container" class="subjects-container">
+                            <!-- Dynamically populated -->
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Preferred Study Times *</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="preferred_times" value="Morning"> Morning</label>
+                            <label><input type="checkbox" name="preferred_times" value="Afternoon"> Afternoon</label>
+                            <label><input type="checkbox" name="preferred_times" value="Evening"> Evening</label>
+                            <label><input type="checkbox" name="preferred_times" value="Night"> Night</label>
+                            <label><input type="checkbox" name="preferred_times" value="Weekend"> Weekend</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Study Style *</label>
+                        <select class="form-control" id="study_style" required>
+                            <option value="">Select Style</option>
+                            <option value="Group">Group Study</option>
+                            <option value="Solo">Solo Study</option>
+                            <option value="Both">Both</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Choose Your Avatar</label>
+                        <div class="avatar-selector">
+                            <button type="button" class="avatar-option" data-avatar="👨‍💻">👨‍💻</button>
+                            <button type="button" class="avatar-option" data-avatar="👩‍💻">👩‍💻</button>
+                            <button type="button" class="avatar-option" data-avatar="👨‍🔬">👨‍🔬</button>
+                            <button type="button" class="avatar-option" data-avatar="👩‍🔬">👩‍🔬</button>
+                            <button type="button" class="avatar-option" data-avatar="🤖">🤖</button>
+                            <button type="button" class="avatar-option" data-avatar="📚">📚</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Bio</label>
+                        <textarea class="form-control" id="bio" rows="3" placeholder="Tell us about your study interests and goals..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full-width">Join StudyBuddy</button>
+                    <button type="button" id="back-to-home" class="btn btn--outline btn--full-width mt-8">Back to Homepage</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main App -->
+        <div id="main-app" class="screen">
+            <!-- App Header -->
+            <header class="app-header">
+                <div class="app-header-content">
+                    <button id="back-to-homepage" class="btn btn--outline btn--sm">← Home</button>
+                    <h1>🎓 StudyBuddy</h1>
+                    <div class="user-info">
+                        <span id="user-name">Welcome!</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Navigation -->
+            <nav class="bottom-nav">
+                <button class="nav-item active" data-tab="discover">
+                    <span class="nav-icon">💕</span>
+                    <span class="nav-label">Discover</span>
+                </button>
+                <button class="nav-item" data-tab="chat">
+                    <span class="nav-icon">🤖</span>
+                    <span class="nav-label">AI Assistant</span>
+                </button>
+                <button class="nav-item" data-tab="matches">
+                    <span class="nav-icon">🎯</span>
+                    <span class="nav-label">Matches</span>
+                </button>
+                <button class="nav-item" data-tab="resources">
+                    <span class="nav-icon">📚</span>
+                    <span class="nav-label">Resources</span>
+                </button>
+                <button class="nav-item" data-tab="profile">
+                    <span class="nav-icon">👤</span>
+                    <span class="nav-label">Profile</span>
+                </button>
+            </nav>
+
+            <!-- Content Areas -->
+            <main class="main-content">
+                <!-- Discover Tab -->
+                <section id="discover-tab" class="tab-content active">
+                    <div class="tab-header">
+                        <h2>Find Study Partners</h2>
+                        <button id="filter-btn" class="btn btn--outline btn--sm">Filters</button>
+                    </div>
+                    
+                    <div class="swipe-container">
+                        <div id="card-stack" class="card-stack">
+                            <!-- Student cards will be dynamically generated -->
+                        </div>
+                        
+                        <div class="swipe-actions">
+                            <button id="pass-btn" class="action-btn pass-btn">❌</button>
+                            <button id="like-btn" class="action-btn like-btn">❤️</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Chat Tab -->
+                <section id="chat-tab" class="tab-content">
+                    <div class="tab-header">
+                        <h2>AI Study Assistant</h2>
+                    </div>
+                    
+                    <div class="chat-container">
+                        <div id="chat-messages" class="chat-messages">
+                            <div class="message bot-message">
+                                <div class="message-content">
+                                    <span class="bot-icon">🤖</span>
+                                    <p>Hi! I'm your AI study assistant. I can help you find study partners, recommend books, suggest professors, and provide schedule information. What would you like to know?</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quick-actions">
+                            <button class="quick-btn" data-query="Find me a study partner for my subjects">Find Study Partner</button>
+                            <button class="quick-btn" data-query="Recommend books for my courses">Book Recommendations</button>
+                            <button class="quick-btn" data-query="Which professors can help with my subjects?">Professor Help</button>
+                            <button class="quick-btn" data-query="What are the library hours during exams?">Library Schedule</button>
+                        </div>
+                        
+                        <div class="chat-input-container">
+                            <input type="text" id="chat-input" class="chat-input" placeholder="Ask me anything about your studies...">
+                            <button id="send-btn" class="btn btn--primary">Send</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Matches Tab -->
+                <section id="matches-tab" class="tab-content">
+                    <div class="tab-header">
+                        <h2>Your Matches</h2>
+                    </div>
+                    
+                    <div id="matches-list" class="matches-list">
+                        <!-- Matches will be populated dynamically -->
+                    </div>
+                </section>
+
+                <!-- Resources Tab -->
+                <section id="resources-tab" class="tab-content">
+                    <div class="tab-header">
+                        <h2>Study Resources</h2>
+                        <div class="schedule-toggle">
+                            <button id="normal-schedule" class="schedule-btn active">Normal</button>
+                            <button id="exam-schedule" class="schedule-btn">Exam Time</button>
+                        </div>
+                    </div>
+                    
+                    <div class="resources-container">
+                        <div class="resource-section">
+                            <h3>📚 Recommended Books</h3>
+                            <div id="books-list" class="books-list">
+                                <!-- Books will be populated dynamically -->
+                            </div>
+                        </div>
+                        
+                        <div class="resource-section">
+                            <h3>👨‍🏫 Professors</h3>
+                            <div id="professors-list" class="professors-list">
+                                <!-- Professors will be populated dynamically -->
+                            </div>
+                        </div>
+                        
+                        <div class="resource-section">
+                            <h3 id="schedule-title">📅 Schedule Information</h3>
+                            <div id="schedule-info" class="schedule-info">
+                                <!-- Schedule info will be populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Profile Tab -->
+                <section id="profile-tab" class="tab-content">
+                    <div class="tab-header">
+                        <h2>Your Profile</h2>
+                        <button id="edit-profile" class="btn btn--outline btn--sm">Edit</button>
+                    </div>
+                    
+                    <div id="profile-display" class="profile-display">
+                        <!-- Profile info will be populated dynamically -->
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Modals -->
+        <div id="filter-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Filter Study Partners</h3>
+                    <button id="close-filter" class="close-btn">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="form-label">Department</label>
+                        <select id="filter-department" class="form-control">
+                            <option value="">All Departments</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Year</label>
+                        <select id="filter-year" class="form-control">
+                            <option value="">All Years</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Study Times</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="filter_times" value="Morning"> Morning</label>
+                            <label><input type="checkbox" name="filter_times" value="Afternoon"> Afternoon</label>
+                            <label><input type="checkbox" name="filter_times" value="Evening"> Evening</label>
+                            <label><input type="checkbox" name="filter_times" value="Night"> Night</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="apply-filters" class="btn btn--primary">Apply Filters</button>
+                    <button id="clear-filters" class="btn btn--outline">Clear All</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="match-modal" class="modal hidden">
+            <div class="modal-content match-modal-content">
+                <div class="match-celebration">
+                    <h2>🎉 It's a Match!</h2>
+                    <p>You and your study partner both liked each other!</p>
+                    <div id="match-students" class="match-students">
+                        <!-- Match info will be populated -->
+                    </div>
+                    <button id="close-match" class="btn btn--primary">Start Studying!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
