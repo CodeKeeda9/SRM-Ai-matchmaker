@@ -1,42 +1,34 @@
-# 🎓 StudyBuddy - SRM University Modinagar
+AI Group Study Matchmaker - StudyBuddy
+📌 Problem Statement
+With the growing need for effective collaboration in educational environments, students often struggle to find suitable group study partners who share similar interests, courses, and schedules. This leads to inefficient study sessions and missed academic opportunities. Our project, AI Group Study Matchmaker, aims to solve this problem by providing an intelligent platform that helps students at SRM University Modinagar quickly find and connect with compatible study partners based on academic and personal preferences.
 
-**StudyBuddy** is an innovative web application designed to help SRM University Modinagar students **find compatible study partners** through a fun, Tinder-style swiping interface. Enhance your study sessions with smart matching, academic resources, and AI assistance—all in one place!
+🚧 Current Progress
+✅ Student onboarding system with detailed profile creation
 
----
+✅ Tinder-like swiping interface to find and match study partners
 
-## 🚀 Features
+✅ AI-powered chatbot for personalized academic support
 
-- **📝 Easy Profile Onboarding:** Create your personalized student profile in minutes.  
-- **💡 Swipe to Match:** Discover compatible study partners by swiping right or left.  
-- **🤖 AI Chatbot Assistant:** Get instant help with study partners, book recommendations, professors, and exam schedules.  
-- **📚 Curated Resources:** Access tailored book lists and professor directories specific to your courses.  
-- **⏰ Dynamic Study Schedules:** Stay updated with real-time library and faculty availability during normal and exam periods.  
-- **💾 Data Persistence:** Your profile and interactions are saved locally for convenience.  
-- **📱 Responsive Design:** Sleek UI, smooth animations, and a hover-reveal bottom navigation bar for easy access.  
+✅ Book and professor recommendation engines integrated
 
----
+✅ Dynamic study schedules displayed for normal and exam periods
 
-## 🎯 Getting Started
+⚠️ Pending: Real-time chat between matched students, full integration with university databases, advanced NLP for chatbot
 
-1. **Clone** or download this repository.  
-2. Open the `index.html` in a modern web browser.  
-3. Complete your profile and start swiping to find your perfect study partner!  
+💡 How the Prototype Solves the Problem
+The prototype provides a seamless user experience where students create personalized profiles, then discover compatible partners via an engaging swipe interface powered by a smart algorithm considering subjects, study times, and preferences. An AI chatbot delivers instant academic assistance including study partner recommendations, books, professors, and schedules, enhancing the collaborative learning experience. Local data storage ensures user information and interaction history are preserved, making the platform practical and privacy-conscious.
 
----
+🛠️ Technologies & Tools Used
+Frontend: HTML5, CSS3 (with modern animations), JavaScript (ES6+)
 
-## 🔮 Future Enhancements
+AI Chatbot: Rule-based natural language processing with keyword matching
 
-- Real-time chat with your matched partners.  
-- Integration with SRM’s official academic databases.  
-- Group study session management.  
-- Advanced AI chatbot with natural language understanding.
+Data Storage: localStorage for profile and preferences persistence
 
----
+Design: Responsive and mobile-first UI with swipe gestures and hover-reveal navigation
 
-## 📄 License (Not Yet)
+Development Tools: Visual Studio Code, Chrome DevTools
 
-This project is open source and licensed under the **MIT License**.
+🖼️ Screenshots
+<img width="1909" height="823" alt="Screenshot 2025-08-20 224954" src="https://github.com/user-attachments/assets/374c9c44-d0bf-4612-895a-e9c6848b65b1" />
 
----
-
-Made with ❤️ by passionate developers to empower SRM University students for academic success and collaborative learning.
