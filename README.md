@@ -30,5 +30,11 @@ Design: Responsive and mobile-first UI with swipe gestures and hover-reveal navi
 Development Tools: Visual Studio Code, Chrome DevTools
 
 🖼️ Screenshots
-<img width="1909" height="823" alt="Screenshot 2025-08-20 224954" src="https://github.com/user-attachments/assets/374c9c44-d0bf-4612-895a-e9c6848b65b1" />
+<img width="1919" height="918" alt="Screenshot 2025-08-20 224641" src="https://github.com/user-attachments/assets/696c664b-38ea-4539-b73f-2b28c692a5b2" />
+<img width="1919" height="823" alt="Screenshot 2025-08-20 224653" src="https://github.com/user-attachments/assets/435cdc52-4d48-4390-af75-0fc7f82f8bb5" />
+<img width="1919" height="915" alt="Screenshot 2025-08-20 224702" src="https://github.com/user-attachments/assets/c79ebcf5-1071-4771-aa1b-b6bd72a0f5f2" />
+<img width="1919" height="792" alt="Screenshot 2025-08-20 224720" src="https://github.com/user-attachments/assets/edfaad18-1482-4969-8dab-913cec221973" />
+<img width="1918" height="916" alt="Screenshot 2025-08-20 224733" src="https://github.com/user-attachments/assets/22597d7b-b0eb-439a-b5ce-25ac09231b59" />
+<img width="1918" height="922" alt="Screenshot 2025-08-20 224740" src="https://github.com/user-attachments/assets/a985f116-cfeb-4989-ab97-486201c95203" />
+<img width="1909" height="823" alt="Screenshot 2025-08-20 224954" src="https://github.com/user-attachments/assets/ccc90e06-bce8-4ca1-be4a-ce1c16799800" />
 
