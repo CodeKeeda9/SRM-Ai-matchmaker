@@ -5,7 +5,7 @@ With the growing need for effective collaboration in educational environments, s
 🚧 Current Progress
 ✅ Student onboarding system with detailed profile creation
 
-✅ Tinder-like swiping interface to find and match study partners
+✅ Tinder-like swiping interface to find and match study partners (work under progress)
 
 ✅ AI-powered chatbot for personalized academic support
 
