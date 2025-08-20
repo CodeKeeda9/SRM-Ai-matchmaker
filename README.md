@@ -38,6 +38,5 @@ Development Tools: Visual Studio Code, Chrome DevTools
 <img width="1918" height="922" alt="Screenshot 2025-08-20 224740" src="https://github.com/user-attachments/assets/a985f116-cfeb-4989-ab97-486201c95203" />
 <img width="1909" height="823" alt="Screenshot 2025-08-20 224954" src="https://github.com/user-attachments/assets/ccc90e06-bce8-4ca1-be4a-ce1c16799800" />
 
-https://github.com/user-attachments/assets/666547cc-8ca8-4173-9f7c-48a7feb958d7
 
 
