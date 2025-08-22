@@ -5,7 +5,7 @@ With the growing need for effective collaboration in educational environments, s
 🚧 Current Progress
 ✅ Student onboarding system with detailed profile creation
 
-✅ Tinder-like swiping interface to find and match study partners (work under progress)
+✅ Tinder-like swiping interface to find and match study partners 
 
 ✅ AI-powered chatbot for personalized academic support
 
@@ -30,13 +30,17 @@ Design: Responsive and mobile-first UI with swipe gestures and hover-reveal navi
 Development Tools: Visual Studio Code, Chrome DevTools
 
 🖼️ Screenshots
-<img width="1919" height="918" alt="Screenshot 2025-08-20 224641" src="https://github.com/user-attachments/assets/696c664b-38ea-4539-b73f-2b28c692a5b2" />
-<img width="1919" height="823" alt="Screenshot 2025-08-20 224653" src="https://github.com/user-attachments/assets/435cdc52-4d48-4390-af75-0fc7f82f8bb5" />
-<img width="1919" height="915" alt="Screenshot 2025-08-20 224702" src="https://github.com/user-attachments/assets/c79ebcf5-1071-4771-aa1b-b6bd72a0f5f2" />
-<img width="1919" height="792" alt="Screenshot 2025-08-20 224720" src="https://github.com/user-attachments/assets/edfaad18-1482-4969-8dab-913cec221973" />
-<img width="1918" height="916" alt="Screenshot 2025-08-20 224733" src="https://github.com/user-attachments/assets/22597d7b-b0eb-439a-b5ce-25ac09231b59" />
-<img width="1918" height="922" alt="Screenshot 2025-08-20 224740" src="https://github.com/user-attachments/assets/a985f116-cfeb-4989-ab97-486201c95203" />
-<img width="1909" height="823" alt="Screenshot 2025-08-20 224954" src="https://github.com/user-attachments/assets/ccc90e06-bce8-4ca1-be4a-ce1c16799800" />
+<img width="1912" height="958" alt="Screenshot 2025-08-22 064552" src="https://github.com/user-attachments/assets/df975c08-6da5-4df8-941a-fa7b466abccf" />
+<img width="1919" height="934" alt="Screenshot 2025-08-22 064544" src="https://github.com/user-attachments/assets/0799de90-88fd-4270-877a-a5ae80abf3f6" />
+<img width="1919" height="989" alt="Screenshot 2025-08-22 064531" src="https://github.com/user-attachments/assets/354d53cb-590f-4445-8568-af6039579032" />
+<img width="1919" height="982" alt="Screenshot 2025-08-22 064523" src="https://github.com/user-attachments/assets/6856b8e0-4c82-4cbe-a8ed-6b3e0375d7c7" />
+<img width="1919" height="980" alt="Screenshot 2025-08-22 064510" src="https://github.com/user-attachments/assets/f086450e-adad-4ec8-a1ff-28fd6911e771" />
+<img width="1919" height="1029" alt="Screenshot 2025-08-22 064501" src="https://github.com/user-attachments/assets/a090ef9e-cf2e-48ea-a9a5-7c372620b4d5" />
+<img width="1913" height="988" alt="Screenshot 2025-08-22 064448" src="https://github.com/user-attachments/assets/74683542-b6ef-4df0-88f7-c67691bf2480" />
+<img width="1919" height="990" alt="Screenshot 2025-08-22 064442" src="https://github.com/user-attachments/assets/2b5651a7-edbe-4d1a-9e4b-a240079e08a5" />
+<img width="1919" height="979" alt="Screenshot 2025-08-22 064432" src="https://github.com/user-attachments/assets/5fb730f8-0376-4714-bfe0-3bbb772aa4ae" />
+<img width="1919" height="976" alt="Screenshot 2025-08-22 064420" src="https://github.com/user-attachments/assets/c7214893-4281-4382-9d9d-0c9b3ae1f63f" />
+
 
 
 
