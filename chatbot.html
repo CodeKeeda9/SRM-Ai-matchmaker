@@ -4,21 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compiler - the friend of all</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         :root {
-            --color-text: #13343b;
-            --color-text-secondary: #62706e;
-            --color-primary: #218cad;
-            --color-primary-hover: #1b7b97;
-            --color-border: rgba(94,82,64,0.2);
-            --color-surface: #fff;
-            --bg: #f6f8fa;
+            /* Inherit from global style.css tokens */
         }
         
         body {
             margin: 0;
-            font-family: Inter, system-ui, Arial, sans-serif;
-            background: var(--bg);
+            font-family: var(--font-family-base, Inter, system-ui, Arial, sans-serif);
+            background: var(--color-background);
             color: var(--color-text);
         }
         
@@ -29,10 +24,10 @@
         }
         
         .chat-card {
-            background: #fff;
-            border: 1px solid var(--color-border);
+            background: var(--color-surface);
+            border: 1px solid var(--color-card-border);
             border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            box-shadow: var(--shadow-lg);
             overflow: hidden;
             height: 80vh;
             display: flex;
@@ -45,7 +40,7 @@
             gap: 12px;
             padding: 16px 20px;
             background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
-            color: #fff;
+            color: var(--color-btn-primary-text);
         }
         
         .bot-avatar {
@@ -75,7 +70,7 @@
             flex: 1;
             overflow-y: auto;
             padding: 16px;
-            background: #f8fafb;
+            background: var(--color-background);
         }
         
         .msg {
@@ -100,14 +95,14 @@
         }
         
         .msg.bot .bubble {
-            background: #fff;
-            border: 1px solid var(--color-border);
+            background: var(--color-surface);
+            border: 1px solid var(--color-card-border);
             border-bottom-left-radius: 6px;
         }
         
         .msg.user .bubble {
             background: var(--color-primary);
-            color: #fff;
+            color: var(--color-btn-primary-text);
             border-bottom-right-radius: 6px;
         }
         
@@ -116,8 +111,8 @@
             align-items: center;
             gap: 8px;
             padding: 8px 12px;
-            background: #fff;
-            border: 1px solid var(--color-border);
+            background: var(--color-surface);
+            border: 1px solid var(--color-card-border);
             border-radius: 14px;
             border-bottom-left-radius: 6px;
             width: max-content;
@@ -165,7 +160,7 @@
         }
         
         .qbtn {
-            background: #fff;
+            background: var(--color-surface);
             border: 1px solid var(--color-border);
             color: var(--color-text);
             padding: 8px 12px;
@@ -177,13 +172,13 @@
         
         .qbtn:hover {
             background: var(--color-primary);
-            color: #fff;
+            color: var(--color-btn-primary-text);
             border-color: var(--color-primary);
         }
         
         .input {
             padding: 12px 16px;
-            background: #fff;
+            background: var(--color-surface);
             border-top: 1px solid var(--color-border);
             display: flex;
             gap: 8px;
@@ -196,6 +191,8 @@
             border-radius: 24px;
             outline: none;
             font-size: 14px;
+            background: var(--color-surface);
+            color: var(--color-text);
         }
         
         .textbox:focus {
@@ -205,7 +202,7 @@
         
         .send {
             background: var(--color-primary);
-            color: #fff;
+            color: var(--color-btn-primary-text);
             border: none;
             border-radius: 24px;
             padding: 10px 16px;
@@ -219,8 +216,8 @@
         }
         
         .card {
-            background: #fff;
-            border: 1px solid var(--color-border);
+            background: var(--color-surface);
+            border: 1px solid var(--color-card-border);
             border-radius: 12px;
             padding: 12px;
             margin: 8px 0;
@@ -233,9 +230,9 @@
         }
         
         .tag {
-            background: #e7f5fa;
-            color: #11667e;
-            border: 1px solid #cfeaf3;
+            background: rgba(var(--color-teal-300-rgb, 50, 184, 198), 0.15);
+            color: var(--color-primary);
+            border: 1px solid rgba(var(--color-teal-300-rgb, 50, 184, 198), 0.25);
             border-radius: 14px;
             padding: 4px 8px;
             font-size: 12px;
@@ -258,7 +255,7 @@
         
         .back-home-btn {
             background: var(--color-primary);
-            color: #fff;
+            color: var(--color-btn-primary-text);
             border: none;
             border-radius: 12px;
             padding: 12px 24px;
