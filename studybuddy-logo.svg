@@ -1,0 +1,47 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="120" height="120" fill="#FCFCF9" rx="8"/>
+  
+  <!-- Dog's head -->
+  <ellipse cx="60" cy="45" rx="25" ry="20" fill="#8B4513"/>
+  
+  <!-- White markings on snout and forehead -->
+  <ellipse cx="60" cy="50" rx="8" ry="6" fill="#FFFFFF"/>
+  <ellipse cx="60" cy="38" rx="6" ry="4" fill="#FFFFFF"/>
+  
+  <!-- Ears -->
+  <ellipse cx="45" cy="35" rx="8" ry="12" fill="#8B4513" transform="rotate(-15 45 35)"/>
+  <ellipse cx="75" cy="35" rx="8" ry="12" fill="#8B4513" transform="rotate(15 75 35)"/>
+  
+  <!-- Eyes (closed with smile) -->
+  <path d="M 52 42 Q 55 40 58 42" stroke="#000000" stroke-width="2" fill="none"/>
+  <path d="M 62 42 Q 65 40 68 42" stroke="#000000" stroke-width="2" fill="none"/>
+  
+  <!-- Nose -->
+  <ellipse cx="60" cy="48" rx="1.5" ry="1" fill="#000000"/>
+  
+  <!-- Mouth with tongue -->
+  <ellipse cx="60" cy="55" rx="4" ry="2" fill="#FF69B4"/>
+  <path d="M 56 55 Q 60 58 64 55" stroke="#000000" stroke-width="1.5" fill="none"/>
+  
+  <!-- Graduation cap -->
+  <rect x="35" y="25" width="50" height="8" fill="#000000" rx="2"/>
+  <rect x="45" y="20" width="30" height="8" fill="#000000" rx="2"/>
+  <rect x="55" y="15" width="10" height="8" fill="#000000" rx="2"/>
+  
+  <!-- Tassel -->
+  <circle cx="60" cy="15" r="2" fill="#FFD700"/>
+  <path d="M 60 15 Q 55 20 50 25" stroke="#FFD700" stroke-width="2" fill="none"/>
+  
+  <!-- Shirt collar -->
+  <rect x="50" y="65" width="20" height="8" fill="#FFFFFF" rx="2"/>
+  
+  <!-- Tie -->
+  <path d="M 60 65 L 55 75 L 60 85 L 65 75 Z" fill="#000000"/>
+  
+  <!-- Text: STUDYBUDDY -->
+  <text x="60" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B4513">STUDYBUDDY</text>
+  
+  <!-- Text: we make learning more fun -->
+  <text x="60" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#8B4513">we make learning more fun</text>
+</svg>

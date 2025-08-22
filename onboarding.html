@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join StudyBuddy - Create Your Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="app">
+        <!-- Top Navigation Header -->
+        <nav id="main-nav" class="main-nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="studybuddy-logo.svg" alt="StudyBuddy" class="logo-image">
+                    <h2>StudyBuddy</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Onboarding Screen -->
+        <div id="onboarding" class="screen">
+            <!-- Ballpit Background -->
+            <div class="ballpit-background">
+                <canvas id="ballpitCanvas" class="ballpit-canvas"></canvas>
+            </div>
+            <div class="container">
+                <div class="onboarding-header">
+                    <h1>🎓 Welcome to StudyBuddy</h1>
+                    <p>Let's create your profile to find the perfect study partners</p>
+                </div>
+                
+                <form id="profile-form" class="profile-form">
+                    <div class="form-group">
+                        <label class="form-label">Name *</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Year *</label>
+                        <select class="form-control" id="year" required>
+                            <option value="">Select Year</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Department *</label>
+                        <select class="form-control" id="department" required>
+                            <option value="">Select Department</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Electronics & Communication">Electronics & Communication</option>
+                            <option value="Electrical Engineering">Electrical Engineering</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Civil Engineering">Civil Engineering</option>
+                            <option value="Biotechnology">Biotechnology</option>
+                            <option value="Chemical Engineering">Chemical Engineering</option>
+                            <option value="Aerospace Engineering">Aerospace Engineering</option>
+                            <option value="Automobile Engineering">Automobile Engineering</option>
+                            <option value="Robotics">Robotics</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                            <option value="Cybersecurity">Cybersecurity</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Subjects (Select multiple)</label>
+                        <div class="checkbox-group" id="subjects-container">
+                            <label><input type="checkbox" name="subjects" value="Mathematics"> Mathematics</label>
+                            <label><input type="checkbox" name="subjects" value="Physics"> Physics</label>
+                            <label><input type="checkbox" name="subjects" value="Chemistry"> Chemistry</label>
+                            <label><input type="checkbox" name="subjects" value="Programming"> Programming</label>
+                            <label><input type="checkbox" name="subjects" value="Data Structures"> Data Structures</label>
+                            <label><input type="checkbox" name="subjects" value="Algorithms"> Algorithms</label>
+                            <label><input type="checkbox" name="subjects" value="Database Management"> Database Management</label>
+                            <label><input type="checkbox" name="subjects" value="Computer Networks"> Computer Networks</label>
+                            <label><input type="checkbox" name="subjects" value="Operating Systems"> Operating Systems</label>
+                            <label><input type="checkbox" name="subjects" value="Software Engineering"> Software Engineering</label>
+                            <label><input type="checkbox" name="subjects" value="Web Development"> Web Development</label>
+                            <label><input type="checkbox" name="subjects" value="Mobile Development"> Mobile Development</label>
+                            <label><input type="checkbox" name="subjects" value="Machine Learning"> Machine Learning</label>
+                            <label><input type="checkbox" name="subjects" value="Digital Electronics"> Digital Electronics</label>
+                            <label><input type="checkbox" name="subjects" value="Analog Electronics"> Analog Electronics</label>
+                            <label><input type="checkbox" name="subjects" value="Control Systems"> Control Systems</label>
+                            <label><input type="checkbox" name="subjects" value="Thermodynamics"> Thermodynamics</label>
+                            <label><input type="checkbox" name="subjects" value="Fluid Mechanics"> Fluid Mechanics</label>
+                            <label><input type="checkbox" name="subjects" value="Strength of Materials"> Strength of Materials</label>
+                            <label><input type="checkbox" name="subjects" value="Engineering Drawing"> Engineering Drawing</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Preferred Study Times *</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="preferred_times" value="Morning"> Morning</label>
+                            <label><input type="checkbox" name="preferred_times" value="Afternoon"> Afternoon</label>
+                            <label><input type="checkbox" name="preferred_times" value="Evening"> Evening</label>
+                            <label><input type="checkbox" name="preferred_times" value="Night"> Night</label>
+                            <label><input type="checkbox" name="preferred_times" value="Weekend"> Weekend</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Study Style *</label>
+                        <select class="form-control" id="study_style" required>
+                            <option value="">Select Style</option>
+                            <option value="Group">Group Study</option>
+                            <option value="Solo">Solo Study</option>
+                            <option value="Both">Both</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Choose Your Avatar *</label>
+                        <div class="avatar-selector">
+                            <button type="button" class="avatar-option" data-avatar="👨‍💻">👨‍💻</button>
+                            <button type="button" class="avatar-option" data-avatar="👩‍💻">👩‍💻</button>
+                            <button type="button" class="avatar-option" data-avatar="👨‍🔬">👨‍🔬</button>
+                            <button type="button" class="avatar-option" data-avatar="👩‍🔬">👩‍🔬</button>
+                            <button type="button" class="avatar-option" data-avatar="🤖">🤖</button>
+                            <button type="button" class="avatar-option" data-avatar="📚">📚</button>
+                        </div>
+                        <input type="hidden" id="selected-avatar" name="avatar" required>
+                        <small class="form-help">Click on an avatar to select it</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Bio</label>
+                        <textarea class="form-control" id="bio" rows="3" placeholder="Tell us about your study interests and goals..."></textarea>
+                    </div>
+                    
+                    <button type="button" id="join-studybuddy-btn" class="btn btn--primary btn--full-width">Join StudyBuddy</button>
+                    <button type="button" id="back-to-home" class="btn btn--outline btn--full-width mt-8">Back to Homepage</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js Library for Ballpit Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r158/three.min.js"></script>
+    <script src="ballpit.js"></script>
+    <script src="onboarding.js"></script>
+    
+
+</body>
+</html>

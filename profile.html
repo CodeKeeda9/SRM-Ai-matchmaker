@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - StudyBuddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="app">
+        <!-- Top Navigation Header -->
+        <nav id="main-nav" class="main-nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="studybuddy-logo.svg" alt="StudyBuddy" class="logo-image">
+                    <h2>StudyBuddy</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <button id="my-profile-nav" class="btn btn--primary btn--sm active">
+                        <span id="profile-avatar" class="profile-avatar">👤</span>
+                        <span id="profile-text">My Profile</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Profile Content -->
+        <div class="profile-page">
+            <!-- Animated Squares Background -->
+            <canvas id="squaresCanvas" class="squares-canvas"></canvas>
+            <div class="container">
+                <div class="profile-content">
+                    <!-- User Info Section -->
+                    <div class="profile-section">
+                        <div class="profile-card">
+                            <div class="profile-avatar-large">
+                                <span id="profile-avatar" class="avatar-large">👨‍💻</span>
+                            </div>
+                            <div class="profile-info">
+                                <h2 id="profile-name">Loading...</h2>
+                                <div class="profile-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Year:</span>
+                                        <span id="profile-year">Loading...</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Department:</span>
+                                        <span id="profile-department">Loading...</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Study Style:</span>
+                                        <span id="profile-style">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Subjects Section -->
+                    <div class="profile-section">
+                        <h3>📚 My Subjects</h3>
+                        <div class="subjects-grid" id="profile-subjects">
+                            <!-- Subjects will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Study Times Section -->
+                    <div class="profile-section">
+                        <h3>⏰ Preferred Study Times</h3>
+                        <div class="study-times-grid" id="profile-times">
+                            <!-- Study times will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Bio Section -->
+                    <div class="profile-section">
+                        <h3>📝 Bio</h3>
+                        <div class="bio-content" id="profile-bio">
+                            <!-- Bio will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Study Partners Section -->
+                    <div class="profile-section">
+                        <h3>👥 Study Partners</h3>
+                        <div class="partners-container">
+                            <div class="partners-grid" id="study-partners">
+                                <!-- Study partners will be populated dynamically -->
+                            </div>
+                            <div class="no-partners" id="no-partners" style="display: none;">
+                                <p>You haven't matched with any study partners yet.</p>
+                                <button class="btn btn--primary" onclick="window.location.href='index.html'">Find Study Partners</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study Statistics Section -->
+                    <div class="profile-section">
+                        <h3>📊 Study Statistics</h3>
+                        <div class="stats-grid profile-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">📚</div>
+                                <div class="stat-value" id="total-subjects">0</div>
+                                <div class="stat-label">Subjects Enrolled</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">⏱️</div>
+                                <div class="stat-value" id="study-sessions">0</div>
+                                <div class="stat-label">Study Sessions</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">🎯</div>
+                                <div class="stat-value" id="avg-compatibility">0%</div>
+                                <div class="stat-label">Avg Compatibility</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">👥</div>
+                                <div class="stat-value" id="total-partners">0</div>
+                                <div class="stat-label">Study Partners</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">⏰</div>
+                                <div class="stat-value" id="time-spent">0h</div>
+                                <div class="stat-label">Time Spent</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">🤖</div>
+                                <div class="stat-value" id="ai-interactions">0</div>
+                                <div class="stat-label">AI Interactions</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Study Times Section -->
+                    <div class="profile-section">
+                        <h3>⏰ Study Schedule Analysis</h3>
+                        <div class="study-schedule-grid">
+                            <div class="schedule-card">
+                                <h4>🌅 Morning (6 AM - 12 PM)</h4>
+                                <div class="schedule-stats">
+                                    <span class="schedule-percentage" id="morning-percentage">0%</span>
+                                    <span class="schedule-sessions" id="morning-sessions">0 sessions</span>
+                                </div>
+                                <div class="schedule-bar">
+                                    <div class="schedule-fill" id="morning-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="schedule-card">
+                                <h4>☀️ Afternoon (12 PM - 6 PM)</h4>
+                                <div class="schedule-stats">
+                                    <span class="schedule-percentage" id="afternoon-percentage">0%</span>
+                                    <span class="schedule-sessions" id="afternoon-sessions">0 sessions</span>
+                                </div>
+                                <div class="schedule-bar">
+                                    <div class="schedule-fill" id="afternoon-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="schedule-card">
+                                <h4>🌆 Evening (6 PM - 12 AM)</h4>
+                                <div class="schedule-stats">
+                                    <span class="schedule-percentage" id="evening-percentage">0%</span>
+                                    <span class="schedule-sessions" id="evening-sessions">0 sessions</span>
+                                </div>
+                                <div class="schedule-bar">
+                                    <div class="schedule-fill" id="evening-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="schedule-card">
+                                <h4>🌙 Night (12 AM - 6 AM)</h4>
+                                <div class="schedule-stats">
+                                    <span class="schedule-percentage" id="night-percentage">0%</span>
+                                    <span class="schedule-sessions" id="night-sessions">0 sessions</span>
+                                </div>
+                                <div class="schedule-bar">
+                                    <div class="schedule-fill" id="night-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Subject Performance Section -->
+                    <div class="profile-section">
+                        <h3>📈 Subject Performance</h3>
+                        <div class="subjects-performance-grid" id="subjects-performance">
+                            <!-- Subject performance cards will be populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="squares-background.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
